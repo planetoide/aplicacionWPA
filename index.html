@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#11365a"/>
+    <meta name="description" content="Este es un ejemplo de una aplicación web progresiva.">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preload" href="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" as="script">
+</head>
+<body>
+    <header>
+        <div id="hd">
+                <img src="img/logo.svg" alt="swa" id="logo"> 
+                <h2 id="intro">Rápida, confiable y atractiva</h2>
+        </div>
+    </header>
+    <div id="espacio"></div>
+    <section id="uno">
+        <h1>¡Atención!</h1>
+        <p class="atencion">Ahora usted puede acceder a este sitio sin la necesidad de una conexión a internet</p>
+        <p class="atencion">Si después de algunos minutos usted vuelve a igresar a este sitio 
+            mientras posea una conexión a internet esta PWA le ofrecerá agregarse a  la pantalla de incio de su dispositivo</p>
+    </section>
+    <section class="contenedor">
+        <div id="texto1" class="texto">
+            <p>Cuando se cumplen los criterios de la aplicación web progresiva los usuarios pueden agregar la aplicación a su pantalla de inicio.</p>
+        </div>
+        <div class="imagen">
+                <img src="img/celular.jpg" alt="celular" class="telefono" id="celular">
+        </div>
+    </section>
+    <section class="contenedor">
+            <div id="texto2" class="texto orden2">
+                <p>Trabaja de manera confiable, sin importar las condiciones de la red, guarda los datos de la aplicación y le permite funcionar aún sin una conexión</p>
+            </div>
+            <div class="imagen orden1">
+                    <img src="img/senal.jpg" alt="celular" class="telefono" id="senal">
+            </div>
+    </section>
+    <section class="contenedor">
+            <div id="texto3" class="texto">
+                <p>Permite almacenar del lado del cliente, cantidades significativas de datos estructurados</p>
+            </div>
+            <div class="imagen">
+                    <img src="img/grafica.jpg" alt="celular" class="telefono" id="grafica">
+            </div>
+    </section>
+    <section class="contenedor">
+            <div id="texto4" class="texto orden2">
+                <p>Permite a la aplicación recibir notificaciones push incluso cuando la aplicación no se está ejecutando</p>
+            </div>
+            <div class="imagen orden1">
+                    <img src="img/notificacion.jpg" alt="celular" class="telefono" id="notificacion">
+            </div>
+    </section>
+    <section class="contenedor">
+            <div id="texto5" class="texto">
+                <p>Posee la capacidad de ofrecer una experiencia de usuario increíble
+                        ya que puede funcionar como una aplicación nativa, es multiplataforma 
+                        y no requiere instalación</p>
+            </div>
+            <div class="imagen">
+                    <img src="img/apps.png" alt="celular" class="telefono" id="apps">
+            </div>
+    </section>
+    <!-- <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> -->
+    <script src="js/main.js"></script>
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js');
+                });
+        }
+     </script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 module.exports = {
-  "globDirectory": "https://github.com/planetoide/aplicacionWPA.git",
+  "globDirectory": "https://planetoide.github.io/aplicacionWPA/",
   "globPatterns": [
     "**/*.{css,png,jpg,svg,html,js,json}"
   ],
-  "swDest": "https://github.com/planetoide/aplicacionWPA.git\\sw.js"
+  "swDest": "https://planetoide.github.io/aplicacionWPA/\\sw.js"
 };

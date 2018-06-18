@@ -1,7 +1,7 @@
 {
     "short_name": "PWA",
     "name": "progressive web application",
-    "start_url": "index.html?launcher=true",
+    "start_url": "/?utm_source=homescreen",
     "icons": [{
           "src": "img/images/icon-128x128.png",
           "sizes": "128x128",
